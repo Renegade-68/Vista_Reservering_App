@@ -1,0 +1,37 @@
+            /*Nav bar*/
+.nav{
+    background-color: #00555c !important;
+    padding-left: 10px;
+    font-family: Raleway;
+    color: #ec644a !important;
+}
+.btn{
+    padding-left: 30px !important; 
+    font-size: 25px;
+    border: transparent;
+}
+.title{
+    padding-left:85px;
+    font-size: 40px;
+}
+        /*Login body*/
+
+.text{
+    font-family: Raleway;
+    color: #ec644a !important;
+}
+
+.viewport-login {
+    height: calc(100vh - 50px);
+}
+
+.login-container{
+    background:#00555c ;
+    flex-direction: column;
+}
+.btn2{
+    font-family: Raleway;
+    color: #ec644a !important;
+    background-color:whitesmoke;
+    border-radius: 10%;
+}
