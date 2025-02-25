@@ -9,6 +9,10 @@ class Components {
                 case "head":
                     echo $this->head($data);
                     break;
+
+                case "header":
+                    echo $this->header();
+                    break;
             }
         }
 
@@ -25,25 +29,38 @@ class Components {
     private function header() {
         $html = <<<HTML
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary nav">
-                <div>
-                    <a class="navbar-brand" href="login.php">
-                        <img src="../../assets/img/logo-vista.png"width="120px" height="50px">
-                    </a>
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="row">
+
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary nav">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <a class="navbar-brand" href="login.php">
+                                <img src="../../assets/img/logo-vista.png"width="120px" height="50px">
+                            </a>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <a class="btn nav" href="login.php">Login</a>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <a class="btn nav" href="register.php">Registratie</a>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <a class="btn nav" href="Faq.php">Faq</a>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center align-items-center">
+                            <h1 class="title">Vista Reservering app</h1>
+                        </div>
+                    </nav>
+
                 </div>
-                <div>
-                    <a class="btn nav" href="login.php">Login</a>
-                </div>
-                <div>
-                    <a class="btn nav" href="register.php">Registratie</a>
-                </div>
-                <div>
-                    <a class="btn nav" href="Faq.php">Faq</a>
-                </div>
-                <div>
-                    <h1 class="title">Vista Reservering app</h1>
-                </div>
-        </nav>
+
+            </div>
+            
+        </div>
+
 
         HTML;
 

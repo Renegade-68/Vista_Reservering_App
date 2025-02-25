@@ -6,12 +6,12 @@
     color: #ec644a !important;
 }
 .btn{
-    padding-left: 30px !important; 
+    /* padding-left: 30px !important;  */
     font-size: 25px;
     border: transparent;
 }
 .title{
-    padding-left:85px;
+    /* padding-left:85px; */
     font-size: 40px;
 }
         /*Login body*/
@@ -22,13 +22,20 @@
 }
 
 .viewport-login {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 76px);
 }
 
 .login-container{
-    background:#00555c ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
+
+.login-container > form > input {
+    margin: 10px;
+}
+
 .btn2{
     font-family: Raleway;
     color: #ec644a !important;
