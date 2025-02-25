@@ -18,7 +18,7 @@
             <div class="col-12 d-flex justify-content-center align-items-center viewport-login ">
 
                 <div class="login-container text">
-                    <form action="login.php" method="POST">
+                        <form action="login.php" method="POST">
                         <label for="username">School email:</label>
                         <input type="text" id="username" name="username" required>
 
